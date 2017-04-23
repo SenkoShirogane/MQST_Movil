@@ -1,10 +1,53 @@
 <resources>
     <string name="app_name">MQST</string>
-    <string name="title_activity_cliente">Cliente</string>
+    <string name="CorreoSSW">sofficcesware.ssw@gmail.com</string>
+
+    <string name="MiPerfil">Mi Perfil</string>
+    <string name="CerrarSesion">Cerrar Sesión</string>
+    <string name="VerDatos">Ver mis Datos</string>
+    <string name="ModificarDatos">Modificar Datos</string>
+    <string name="Manual">Manual de Usuario</string>
+    <string name="Ayuda">Ayuda</string>
+
+    <!-- Modulos -->
+    <string name="Clientes">Lista de Clientes</string>
+    <string name="Administradores">Lista de Administradores</string>
+    <string name="Piezas">Catálogo de Piezas</string>
+    <string name="Productos">Catálogo de Productos</string>
+    <string name="Proveedores">Lista de Proveedores</string>
+    <string name="Ordenes">Lista de Órdenes</string>
+
+    <!-- Login -->
+    <string name="Login">Iniciar Sesión</string>
+    <string name="pedirContrasena">Ingresa tu contraseña</string>
+    <string name="Contrasena">Contraseña</string>
+    <string name="pedirUsuario">Ingresa tu usuario</string>
+    <string name="Usuario">Usuario</string>
+    <string name="ClienteLogin">Iniciar Cliente</string>
+    <string name="AdminLogin">Iniciar Admin</string>
+
+    <!-- Cliente -->
+    <string name="Contacto">Contáctanos</string>
+    <string name="MisOrdenes">Mis Órdenes</string>
+    <string name="VerOrdenesCliente">Ver mis Órdenes</string>
+    <string name="EscribirMensaje">Ingresa aquí tu mensaje</string>
+    <string name="ContactoCorreo">¿Quieres hablar con un administrador?</string>
+
+    <!-- Admin -->
+    <string name="AgregarServicios">Agregar Servicios</string>
+
+    <!-- Generales -->
+    <string name="Aceptar">Aceptar</string>
+    <string name="Rechazar">Rechazar</string>
+    <string name="Borrar">Borrar</string>
+    <string name="Modificar">Modificar</string>
+    <string name="Limpiar">Limpiar</string>
+    <string name="Error">Ha ocurrido un error.</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_administrador">Administrador</string>
+    <string name="title_activity_cliente">Cliente</string>
 </resources>

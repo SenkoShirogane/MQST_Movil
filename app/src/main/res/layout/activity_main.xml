@@ -1,45 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ipn.sofficcesware.com.mqst.MainActivity">
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Iniciar Sesión"
+        android:text="@string/Login"
         android:textSize="30sp"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="47dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView2" />
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Usuario"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="25dp"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/usuarioLogin"
+        android:layout_alignStart="@+id/usuarioLogin" />
+
+    <EditText
+        android:id="@+id/usuarioLogin"
+        android:layout_width="298dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/contrasenaLogin"
+        android:layout_alignStart="@+id/contrasenaLogin"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/pedirUsuario"
+        android:inputType="textPersonName"
+        android:textColorLink="#292C5C"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Contrasena"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="134dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/usuarioLogin"
+        android:layout_alignLeft="@+id/usuarioLogin"
+        android:layout_alignStart="@+id/usuarioLogin" />
+
+    <EditText
+        android:id="@+id/contrasenaLogin"
+        android:layout_width="298dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="@string/pedirContrasena"
+        android:inputType="textPassword"
+        android:textColorLink="#292C5C"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="176dp"
+        android:textStyle="normal"/>
 
     <Button
         android:id="@+id/btnIniciarSesion"
-        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
-        android:text="Iniciar Cliente"
-        android:layout_marginLeft="51dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="114dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/ClienteLogin"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="256dp"
+        android:layout_below="@+id/contrasenaLogin"
+        android:layout_alignRight="@+id/contrasenaLogin"
+        android:layout_alignEnd="@+id/contrasenaLogin" />
+
+    <Button
+        android:id="@+id/btnLimpiarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:text="@string/Limpiar"
+        android:textColor="@color/azul"
+        android:layout_alignBaseline="@+id/btnIniciarSesion"
+        android:layout_alignBottom="@+id/btnIniciarSesion"
+        android:layout_alignLeft="@+id/contrasenaLogin"
+        android:layout_alignStart="@+id/contrasenaLogin" />
 
     <Button
         android:id="@+id/btnIniciarSesion2"
-        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
-        android:text="Iniciar Admin"
-        android:layout_alignBaseline="@+id/btnIniciarSesion"
-        android:layout_alignBottom="@+id/btnIniciarSesion"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="41dp"
-        android:layout_marginEnd="41dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/AdminLogin"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="256dp"
+        android:layout_below="@+id/btnIniciarSesion"
+        android:layout_alignLeft="@+id/btnIniciarSesion"
+        android:layout_alignStart="@+id/btnIniciarSesion" />
 
 </RelativeLayout>
