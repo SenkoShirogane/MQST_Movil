@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_perfilAdmin"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Mi Perfil" />
+        <item
+            android:id="@+id/nav_administradores"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Administradores" />
+        <item
+            android:id="@+id/nav_clientesAdmin"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Clientes" />
+        <item
+            android:id="@+id/nav_proveedoresAdmin"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Proveedores" />
+        <item
+            android:id="@+id/nav_productosAdmin"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Productos" />
+        <item
+            android:id="@+id/nav_piezasAdmin"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Piezas" />
+        <item
+            android:id="@+id/nav_ordenesAdmin"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Órdenes" />
+    </group>
+
+    <item android:title="Otros">
+        <menu>
+            <item
+                android:id="@+id/nav_manualAdmin"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Manuales" />
+            <item
+                android:id="@+id/nav_salirAdmin"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Cerrar Sesión" />
+        </menu>
+    </item>
+
+</menu>
