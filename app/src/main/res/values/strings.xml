@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">MQST</string>
     <string name="CorreoSSW">sofficcesware.ssw@gmail.com</string>
+    <string name="CorreoAdmin">lalalala</string>
 
     <string name="MiPerfil">Mi Perfil</string>
     <string name="CerrarSesion">Cerrar Sesión</string>
