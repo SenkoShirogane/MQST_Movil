@@ -36,6 +36,8 @@
 
     <!-- Admin -->
     <string name="AgregarServicios">Agregar Servicios</string>
+    <string name="GestionOrdenes">Gestión de Órdenes</string>
+    <string name="verOrdenes">Ver Órdenes</string>
 
     <!-- Generales -->
     <string name="Aceptar">Aceptar</string>
@@ -44,6 +46,7 @@
     <string name="Modificar">Modificar</string>
     <string name="Limpiar">Limpiar</string>
     <string name="Error">Ha ocurrido un error.</string>
+    <string name="nada">Aquí irá algo xD</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -51,4 +54,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_administrador">Administrador</string>
     <string name="title_activity_cliente">Cliente</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

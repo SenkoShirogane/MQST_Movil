@@ -4,6 +4,7 @@
 
     <application
         android:allowBackup="true"
+        android:background="#d4d4d4"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -23,7 +24,11 @@
         <activity
             android:name=".administrador.Administrador"
             android:label="@string/title_activity_administrador"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".administrador.AgregarOrdenesActivity"
+            android:label="Agregar Órdenes"/>
+
     </application>
 
 </manifest>

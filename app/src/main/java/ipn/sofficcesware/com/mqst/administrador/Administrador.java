@@ -1,8 +1,11 @@
 package ipn.sofficcesware.com.mqst.administrador;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,10 +16,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import ipn.sofficcesware.com.mqst.MainActivity;
 import ipn.sofficcesware.com.mqst.R;
 
 public class Administrador extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, OrdenesAdminFragment.OnFragmentInteractionListener,
+        ProductosAdminFragment.OnFragmentInteractionListener, ProveedoresFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +84,9 @@ public class Administrador extends AppCompatActivity
         // ¿Qué hará al presionar una opción?.
         int id = item.getItemId();
 
+        Fragment fragment = null;
+        Boolean FragmentoSeleccionado = false;
+
         if (id == R.id.nav_perfilAdmin) {
             //
         } else if (id == R.id.nav_administradores) {
@@ -86,21 +94,34 @@ public class Administrador extends AppCompatActivity
         } else if (id == R.id.nav_clientesAdmin) {
 
         } else if (id == R.id.nav_proveedoresAdmin) {
-
+            fragment = new ProveedoresFragment();
+            FragmentoSeleccionado = true;
         } else if (id == R.id.nav_productosAdmin) {
-
+            fragment = new ProductosAdminFragment();
+            FragmentoSeleccionado = true;
         } else if (id == R.id.nav_piezasAdmin) {
 
         } else if (id == R.id.nav_ordenesAdmin) {
-
+            fragment = new OrdenesAdminFragment();
+            FragmentoSeleccionado = true;
         } else if (id == R.id.nav_manualAdmin) {
 
         } else if (id == R.id.nav_salirAdmin) {
-
+            //Lógica para cerrar sesión x3
+            Intent intento = new Intent(this, MainActivity.class);
+            startActivity(intento);
         }
 
+        if(FragmentoSeleccionado){
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_admin,fragment).commit();
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

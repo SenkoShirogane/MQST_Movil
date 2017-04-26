@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ipn.sofficcesware.com.mqst.administrador.ProveedoresFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gestionar Proveedores"
+                android:textSize="25sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/GestionProveedores" />
+
+            <Button
+                android:id="@+id/btn_VerProveedoresAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/GestionProveedores"
+                android:layout_marginTop="43dp"
+                android:text="Ver Proveedores"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_AgregarProveedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agregar Proveedores"
+                android:textSize="20sp"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/btn_VerProveedoresAdmin"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/btn_ModificarProveedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="Modificar Proveedores"
+                android:textSize="20sp"
+                android:layout_below="@+id/btn_AgregarProveedor"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/btn_EliminarProveedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="Eliminar Proveedores"
+                android:textSize="20sp"
+                android:layout_below="@+id/btn_ModificarProveedor"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

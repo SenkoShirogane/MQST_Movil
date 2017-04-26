@@ -4,7 +4,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_perfilAdmin"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@android:drawable/ic_lock_lock"
             android:title="Mi Perfil" />
         <item
             android:id="@+id/nav_administradores"
