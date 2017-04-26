@@ -17,7 +17,7 @@ public class AgregarOrdenesActivity extends AppCompatActivity implements View.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_ordenes);
-
+        /*
         fecha = (Button) findViewById(R.id.btn_agregarOrdenFecha);
         hora = (Button) findViewById(R.id.btn_agregarOrdenHora);
         fecha.setOnClickListener(this);
@@ -25,10 +25,12 @@ public class AgregarOrdenesActivity extends AppCompatActivity implements View.On
 
         fechat = (TextView) findViewById(R.id.fecha);
         horat = (TextView) findViewById(R.id.hora);
+        */
     }
 
     @Override
     public void onClick(View v) {
+        /*
         String valorFecha = fechat.getText().toString();
         String valorHora = horat.getText().toString();
 
@@ -40,5 +42,6 @@ public class AgregarOrdenesActivity extends AppCompatActivity implements View.On
 
                 break;
         }
+        */
     }
 }
