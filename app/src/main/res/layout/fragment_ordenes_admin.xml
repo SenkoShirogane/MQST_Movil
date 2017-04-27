@@ -15,7 +15,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/GestionOrdenes"
+                android:text="@string/ges_Ordenes"
                 android:textSize="25sp"
                 android:textColor="@color/colorPrimaryDark"
                 android:gravity="center_horizontal"

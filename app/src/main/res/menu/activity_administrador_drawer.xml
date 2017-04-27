@@ -4,44 +4,44 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_perfilAdmin"
-            android:icon="@android:drawable/ic_lock_lock"
-            android:title="Mi Perfil" />
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/MiPerfil" />
         <item
             android:id="@+id/nav_administradores"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@android:drawable/ic_menu_edit"
             android:title="Administradores" />
         <item
             android:id="@+id/nav_clientesAdmin"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Clientes" />
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="@string/clientes" />
         <item
             android:id="@+id/nav_proveedoresAdmin"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@android:drawable/ic_menu_agenda"
             android:title="Proveedores" />
         <item
             android:id="@+id/nav_productosAdmin"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@android:drawable/ic_input_add"
             android:title="Productos" />
         <item
             android:id="@+id/nav_piezasAdmin"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@android:drawable/ic_input_add"
             android:title="Piezas" />
         <item
             android:id="@+id/nav_ordenesAdmin"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@android:drawable/ic_popup_reminder"
             android:title="Órdenes" />
     </group>
 
-    <item android:title="Otros">
+    <item android:title="@string/otros">
         <menu>
             <item
                 android:id="@+id/nav_manualAdmin"
                 android:icon="@drawable/ic_menu_manage"
-                android:title="Manuales" />
+                android:title="@string/Manual" />
             <item
                 android:id="@+id/nav_salirAdmin"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Cerrar Sesión" />
+                android:icon="@android:drawable/ic_notification_clear_all"
+                android:title="@string/CerrarSesion" />
         </menu>
     </item>
 

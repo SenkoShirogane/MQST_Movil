@@ -3,6 +3,8 @@ package ipn.sofficcesware.com.mqst.administrador;
 import android.icu.util.Calendar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -17,6 +19,9 @@ public class AgregarOrdenesActivity extends AppCompatActivity implements View.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_ordenes);
+
+        //getActionBar().setDisplayHomeAsUpEnabled(true); //boton atrás
+
         /*
         fecha = (Button) findViewById(R.id.btn_agregarOrdenFecha);
         hora = (Button) findViewById(R.id.btn_agregarOrdenHora);
@@ -44,4 +49,16 @@ public class AgregarOrdenesActivity extends AppCompatActivity implements View.On
         }
         */
     }
+    /*
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home: //hago un case por si en un futuro agrego mas opciones
+                Log.i("ActionBar", "Atrás");
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    } */
 }

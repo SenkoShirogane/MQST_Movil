@@ -11,12 +11,12 @@
     <string name="Ayuda">Ayuda</string>
 
     <!-- Modulos -->
-    <string name="Clientes">Lista de Clientes</string>
-    <string name="Administradores">Lista de Administradores</string>
-    <string name="Piezas">Catálogo de Piezas</string>
-    <string name="Productos">Catálogo de Productos</string>
-    <string name="Proveedores">Lista de Proveedores</string>
-    <string name="Ordenes">Lista de Órdenes</string>
+    <string name="ges_Clientes">Gestión de Clientes</string>
+    <string name="ges_Administradores">Gestión de Administradores</string>
+    <string name="ges_Piezas">Gestión de Piezas</string>
+    <string name="ges_Productos">Gestión de Productos</string>
+    <string name="ges_Proveedores">Gestión de Proveedores</string>
+    <string name="ges_Ordenes">Gestión de Órdenes</string>
 
     <!-- Login -->
     <string name="Login">Iniciar Sesión</string>
@@ -36,8 +36,9 @@
 
     <!-- Admin -->
     <string name="AgregarServicios">Agregar Servicios</string>
-    <string name="GestionOrdenes">Gestión de Órdenes</string>
     <string name="verOrdenes">Ver Órdenes</string>
+    <string name="proveedor">Proveedores</string>
+    <string name="clientes">Clientes</string>
 
     <!-- Generales -->
     <string name="Aceptar">Aceptar</string>
@@ -47,6 +48,7 @@
     <string name="Limpiar">Limpiar</string>
     <string name="Error">Ha ocurrido un error.</string>
     <string name="nada">Aquí irá algo xD</string>
+    <string name="otros">Otros</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

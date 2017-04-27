@@ -4,15 +4,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_perfilCliente"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Mi Perfil" />
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/MiPerfil" />
         <item
             android:id="@+id/nav_ordenesCliente"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Mis Órdenes" />
+            android:icon="@android:drawable/ic_popup_reminder"
+            android:title="@string/MisOrdenes" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/otros">
         <menu>
             <item
                 android:id="@+id/nav_manualCliente"
@@ -20,7 +20,7 @@
                 android:title="Manual de Usuario" />
             <item
                 android:id="@+id/nav_salirCliente"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@android:drawable/ic_notification_clear_all"
                 android:title="Cerrar Sesión" />
         </menu>
     </item>
