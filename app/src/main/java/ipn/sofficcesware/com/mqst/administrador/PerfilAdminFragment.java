@@ -11,26 +11,21 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import ipn.sofficcesware.com.mqst.R;
-import ipn.sofficcesware.com.mqst.proveedor.AgregarProveedoresActivity;
-import ipn.sofficcesware.com.mqst.proveedor.EliminarProveedoresActivity;
-import ipn.sofficcesware.com.mqst.proveedor.ModificarProveedoresActivity;
-import ipn.sofficcesware.com.mqst.proveedor.verProveedoresActivity;
 
-public class ProveedoresFragment extends Fragment implements View.OnClickListener{
+public class PerfilAdminFragment extends Fragment implements View.OnClickListener {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
     private String mParam1;
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
 
-    public ProveedoresFragment() {
+    public PerfilAdminFragment() {
         // Required empty public constructor
     }
 
-    public static ProveedoresFragment newInstance(String param1, String param2) {
-        ProveedoresFragment fragment = new ProveedoresFragment();
+    public static PerfilAdminFragment newInstance(String param1, String param2) {
+        PerfilAdminFragment fragment = new PerfilAdminFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -50,15 +45,11 @@ public class ProveedoresFragment extends Fragment implements View.OnClickListene
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v= inflater.inflate(R.layout.fragment_proveedores, container, false);
-        Button verProv = (Button) v.findViewById(R.id.btn_VerProveedoresAdmin);
-        verProv.setOnClickListener(this);
-        Button agregarProv = (Button) v.findViewById(R.id.btn_AgregarProveedor);
-        agregarProv.setOnClickListener(this);
-        Button modProv = (Button) v.findViewById(R.id.btn_ModificarProveedor);
-        modProv.setOnClickListener(this);
-        Button elProv = (Button) v.findViewById(R.id.btn_EliminarProveedor);
-        elProv.setOnClickListener(this);
+        View v = inflater.inflate(R.layout.fragment_perfil_admin, container, false);
+        Button verDatos = (Button) v.findViewById(R.id.btn_VerDatosAdmin);
+        Button modDatos = (Button) v.findViewById(R.id.btn_ModificarDatosAdmin);
+        verDatos.setOnClickListener(this);
+        modDatos.setOnClickListener(this);
         return v;
     }
 
@@ -88,27 +79,21 @@ public class ProveedoresFragment extends Fragment implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.btn_VerProveedoresAdmin:
-                Intent intento = new Intent(getActivity(), verProveedoresActivity.class);
-                startActivity(intento);
+        switch(v.getId()){
+            case R.id.btn_VerDatosAdmin:
+                Intent intent = new Intent(getActivity(),verDatosAdminActivity.class);
+                startActivity(intent);
                 break;
-            case R.id.btn_AgregarProveedor:
-                Intent intento2 = new Intent(getActivity(), AgregarProveedoresActivity.class);
-                startActivity(intento2);
-                break;
-            case R.id.btn_ModificarProveedor:
-                Intent intento3 = new Intent(getActivity(), ModificarProveedoresActivity.class);
-                startActivity(intento3);
-                break;
-            case R.id.btn_EliminarProveedor:
-                Intent intento4 = new Intent(getActivity(), EliminarProveedoresActivity.class);
-                startActivity(intento4);
+            case R.id.btn_ModificarDatosAdmin:
+                Intent intent2 = new Intent(getActivity(), ModificarDatosAdminActivity.class);
+                startActivity(intent2);
                 break;
         }
     }
 
+
     public interface OnFragmentInteractionListener {
+        // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
 }

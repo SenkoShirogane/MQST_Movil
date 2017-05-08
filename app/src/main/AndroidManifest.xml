@@ -7,11 +7,11 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -25,7 +25,92 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".administrador.AgregarOrdenesActivity"
-            android:label="Agregar Órdenes"/>
+            android:label="@string/agregarOrdenes"
+            android:parentActivityName=".administrador.Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".administrador.Administrador" />
+        </activity>
+        <activity
+            android:name=".cliente.ContactanosActivity"
+            android:label="@string/Contacto"
+            android:parentActivityName=".administrador.Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".administrador.Administrador" />
+        </activity>
+        <activity
+            android:name=".cliente.ModificarDatosClienteActivity"
+            android:label="Modificar datos de la cuenta"
+            android:parentActivityName=".cliente.Cliente">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".cliente.Cliente" />
+        </activity>
+        <activity
+            android:name=".cliente.RegistroActivity"
+            android:label="@string/Registrate"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".cliente.verDatosClienteActivity"
+            android:label="@string/MisDatos"
+            android:parentActivityName=".cliente.Cliente">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".cliente.Cliente" />
+        </activity>
+        <activity
+            android:name=".proveedor.verProveedoresActivity"
+            android:label="Ver proveedores"
+            android:parentActivityName=".administrador.Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".administrador.Administrador" />
+        </activity>
+        <activity
+            android:name=".proveedor.AgregarProveedoresActivity"
+            android:label="Agregar un Proveedor"
+            android:parentActivityName=".administrador.Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".administrador.Administrador" />
+        </activity>
+        <activity
+            android:name=".proveedor.EliminarProveedoresActivity"
+            android:label="Eliminar un proveedor"
+            android:parentActivityName=".administrador.Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".administrador.Administrador" />
+        </activity>
+        <activity
+            android:name=".proveedor.ModificarProveedoresActivity"
+            android:label="Modificar datos de Proveedor"
+            android:parentActivityName=".administrador.Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".administrador.Administrador" />
+        </activity>
+        <activity
+            android:name=".administrador.ModificarDatosAdminActivity"
+            android:label="Modificar datos de la cuenta"
+            android:parentActivityName=".administrador.Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".administrador.Administrador" />
+        </activity>
+        <activity
+            android:name=".administrador.verDatosAdminActivity"
+            android:label="@string/MisDatos"
+            android:parentActivityName=".administrador.Administrador">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".administrador.Administrador" />
+        </activity>
     </application>
 
 </manifest>

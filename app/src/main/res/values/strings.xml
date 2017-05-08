@@ -4,6 +4,7 @@
     <string name="CorreoAdmin">lalalala</string>
 
     <string name="MiPerfil">Mi Perfil</string>
+    <string name="MisDatos">Ver mis Datos</string>
     <string name="CerrarSesion">Cerrar Sesión</string>
     <string name="VerDatos">Ver mis Datos</string>
     <string name="ModificarDatos">Modificar Datos</string>
@@ -29,14 +30,17 @@
 
     <!-- Cliente -->
     <string name="Contacto">Contáctanos</string>
-    <string name="MisOrdenes">Mis Órdenes</string>
-    <string name="VerOrdenesCliente">Ver mis Órdenes</string>
+    <string name="Registrate">¡Regístrate!</string>
+    <string name="MisOrdenesCliente">Mis Órdenes</string>
+    <string name="verOrdenesCliente">Ver mis Órdenes</string>
+    <string name="productosCliente">Ver Catálogo</string>
     <string name="EscribirMensaje">Ingresa aquí tu mensaje</string>
     <string name="ContactoCorreo">¿Quieres hablar con un administrador?</string>
 
     <!-- Admin -->
     <string name="AgregarServicios">Agregar Servicios</string>
     <string name="verOrdenes">Ver Órdenes</string>
+    <string name="agregarOrdenes">Agregar Órdenes</string>
     <string name="proveedor">Proveedores</string>
     <string name="clientes">Clientes</string>
 
@@ -53,10 +57,118 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Ajustes</string>
     <string name="title_activity_administrador">Administrador</string>
     <string name="title_activity_cliente">Cliente</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Fragment vacío :3 -->
+    <string name="hello_blank_fragment">¡Hola mundo!</string>
+
+    <!-- Yatziri xD -->
+    /* TITULOS */
+    <string name="titLogIn">Log In</string>
+    <string name="titRegistro">Registro</string>
+    <string name="titPerfil">Mi perfil</string>
+    <string name="titVerPerfil">Mis Datos</string>
+    <string name="titOrdenesCliente">Mis Ordenes</string>
+    <string name="titModificarPerfil">Modificar mis Datos</string>
+    <string name="titCatalogoProductos">Productos</string>
+
+    /* MENSAJES */
+    <string name="msjSinCuenta">¿No tienes una cuenta? ¡Regístrate!</string>
+    <string name="msjSalir">Cerrar sesión</string>
+
+    /* ETIQUETAS */
+    <string name="etiquetaName">Nombre:</string>
+    <string name="etiquetaApPat">Apellido Paterno:</string>
+    <string name="etiquetaApMat">Apellido Materno:</string>
+    <string name="etiquetaUser">Usuario:</string>
+    <string name="etiquetaEmail">E-mail:</string>
+    <string name="etiquetaEmail2">Repite tu e-mail:</string>
+    <string name="etiquetaPassword">Contraseña:</string>
+    <string name="etiquetaPassword2">Repite tu contraseña:</string>
+    <string name="etiquetaRegistro">Registrarse</string>
+    <string name="etiquetaLimpiar">Limpiar campos</string>
+    <string name="etiquetaGuardar">Guardar cambios</string>
+    <string name="etiquetaCancelar">Cancelar cambios</string>
+    <string name="etiquetaPrecio">Precio:</string>
+    <string name="etiquetaProovedor">Proveedor:</string>
+    <string name="etiquetaEmpresa">Empresa:</string>
+    <string name="etiquetaDetalles">Detalles:</string>
+
+    /* DIRECCIÓN */
+    <string name="etiquetaEstado">Estado:</string>
+    <string name="etiquetaMunicipio">Municipio:</string>
+    <string name="etiquetaColonia">Colonia:</string>
+    <string name="etiquetaCodP">C.P.:</string>
+    <string name="etiquetaCalle">Calle:</string>
+    <string name="etiquetaNumero">Número:</string>
+
+    /* CONTACTO */
+    <string name="etiquetaTelCasa">Teléfono de casa:</string>
+    <string name="etiquetaTelMovil">Teléfono celular:</string>
+    <string name="etiquetaTerminos">Acepto los términos y condiciones</string>
+
+    /*VARIABLES*/
+    <string name="verNombreCompleto">nombre + apPat + apMat</string>
+    <string name="verBienvenida">Bienvenido(a)</string>
+    <string name="verUser">usuario</string>
+    <string name="verNombre">nombre</string>
+    <string name="verApPat">apPat</string>
+    <string name="verApMat">apMat</string>
+    <string name="verEmail">mail@example.com</string>
+    <string name="verEstado">EstadoActual</string>
+    <string name="verMunicipio">MunicipioActual</string>
+    <string name="verColonia">ColoniaActual</string>
+    <string name="verCodP">XXXXX</string>
+    <string name="verCalle">CalleActual</string>
+    <string name="verNumero">XX</string>
+    <string name="verTelCasa">XXXXXXXX</string>
+    <string name="verTelMovil">XXXXXXXXXX</string>
+    <string name="verProducto">nombreProducto</string>
+
+    /*INICIO CLIENTE*/
+    <string name="etiquetaVerPerfil">Ver perfil</string>
+    <string name="etiquetaModPerfil">Modificar mis datos</string>
+    <string name="title_activity_menu_ordenes_cliente">MenuOrdenesCliente</string>
+    <string name="title_activity_perfil_cliente">PerfilCliente</string>
+
+    <!-- Angie :3-->
+    <!-- actividadProducto -->
+    <string name="NombreProd">Nombre del producto</string>
+    <string name="textPrecioProd">Precio:</string>
+    <string name="textEdoProd">Estado:</string>
+    <string name="edoProdBD">Visible/Invisible</string>
+    <string name="textProv">Proveedor:</string>
+    <string name="proveedorBD">Nombre de la empresa</string>
+    <string name="textDetalles">Detalles:</string>
+
+    <!-- Catálogo Productos -->
+    <string name="encabezadoCatProd">Catálogo de Productos</string>
+    <string name="nombCatProd1">   Producto 1   </string>
+    <string name="nombCatProd2">   Producto 2   </string>
+
+    <!-- Agregar Productos -->
+    <string name="encabezadoAgregarProd">Agregar un producto</string>
+    <string name="textProductoNuevo">Nombre del Producto: </string>
+    <string name="textPrecioNuevo">Precio:</string>
+    <string name="textEstado">Estado</string>
+    <string name="textProveedor">Proveedor</string>
+    <string name="textNuevaImagenProd">Imagen del Producto:</string>
+    <string name="textNuevosDetallesProd">Detalles del producto:</string>
+
+    <!-- Modificar productos -->
+    <string name="encabezadoModProd">Modificar producto</string>
+    <string name="textModNombreProd">Nuevo nombre del producto: </string>
+    <string name="textModPrecio">Nuevo Precio:</string>
+    <string name="textModEstado">Nuevo Estado</string>
+    <string name="textModProveedor">Nuevo Proveedor</string>
+    <string name="textModImagenProd">Nueva Imagen del Producto:</string>
+    <string name="textModDetallesProd">Detalles nuevos del producto:</string>
+    <string name="modTextProducto">Iphone 5s</string>
+    <string name="modTextDetalles">Iphone 5s color plateado 4GB de memoria interna.</string>
+    <string name="modCostoProd">8050.69</string>
+
+    <!-- Eliminar Productos-->
+    <string name="encabezadoEliminarProd">Eliminar Producto</string>
 </resources>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ipn.sofficcesware.com.mqst.cliente.verDatosClienteActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titVerPerfil"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/TittleSize"
+        android:textStyle="bold"
+        android:id="@+id/Titulo"
+        />
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/contenido"
+        android:layout_below="@+id/Titulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margDiv"
+        android:layout_marginStart="@dimen/margDiv"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/paddDiv">
+
+        <RelativeLayout
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txNombrePerfilCliente"
+                android:text="@string/etiquetaName"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txNombreContenidoCliente"
+                android:text="@string/verNombreCompleto"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/txNombrePerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txUserPerfilCliente"
+                android:text="@string/etiquetaUser"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txNombrePerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txUserContenidoCliente"
+                android:text="@string/verUser"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/txUserPerfilCliente"
+                android:layout_below="@+id/txNombreContenidoCliente"
+                android:layout_alignBaseline="@+id/txUserPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txEmailPerfilCliente"
+                android:text="@string/etiquetaEmail"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txUserPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txEmailContenidoCliente"
+                android:text="@string/verEmail"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/txEmailPerfilCliente"
+                android:layout_below="@+id/txUserContenidoCliente"
+                android:layout_alignBaseline="@+id/txEmailPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txEstadoPerfilCliente"
+                android:text="@string/etiquetaEstado"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txEmailPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txEstadoContenidoCliente"
+                android:text="@string/verEstado"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/txEstadoPerfilCliente"
+                android:layout_below="@+id/txEmailContenidoCliente"
+                android:layout_alignBaseline="@+id/txEstadoPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txMunicipioPerfilCliente"
+                android:text="@string/etiquetaMunicipio"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txEstadoPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txMunicipioContenidoCliente"
+                android:text="@string/verMunicipio"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/txMunicipioPerfilCliente"
+                android:layout_below="@+id/txEstadoContenidoCliente"
+                android:layout_alignBaseline="@+id/txMunicipioPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txColoniaPerfilCliente"
+                android:text="@string/etiquetaColonia"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txMunicipioPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txColoniaContenidoCliente"
+                android:text="@string/verColonia"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/txColoniaPerfilCliente"
+                android:layout_below="@+id/txMunicipioContenidoCliente"
+                android:layout_alignBaseline="@+id/txColoniaPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txCodPPerfilCliente"
+                android:text="@string/etiquetaCodP"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txColoniaPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txCodPContenidoCliente"
+                android:text="@string/verCodP"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/txCodPPerfilCliente"
+                android:layout_below="@+id/txColoniaContenidoCliente"
+                android:layout_alignBaseline="@+id/txCodPPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txCallePerfilCliente"
+                android:text="@string/etiquetaCalle"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txCodPPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txCalleContenidoCliente"
+                android:text="@string/verCalle"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/txCallePerfilCliente"
+                android:layout_below="@+id/txCodPContenidoCliente"
+                android:layout_alignBaseline="@+id/txCallePerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txNumeroPerfilCliente"
+                android:text="@string/etiquetaNumero"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txCallePerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txNumeroContenidoCliente"
+                android:text="@string/verNumero"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/txNumeroPerfilCliente"
+                android:layout_below="@+id/txCalleContenidoCliente"
+                android:layout_alignBaseline="@+id/txNumeroPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txTelCasaPerfilCliente"
+                android:text="@string/etiquetaTelCasa"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txNumeroPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txTelCasaContenidoCliente"
+                android:text="@string/verTelCasa"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/txTelCasaPerfilCliente"
+                android:layout_below="@+id/txNumeroContenidoCliente"
+                android:layout_alignBaseline="@+id/txTelCasaPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txTelMovilPerfilCliente"
+                android:text="@string/etiquetaTelCasa"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txTelCasaPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txTelMovilContenidoCliente"
+                android:text="@string/verTelMovil"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_toRightOf="@+id/txTelMovilPerfilCliente"
+                android:layout_below="@+id/txTelCasaContenidoCliente"
+                android:layout_alignBaseline="@+id/txTelMovilPerfilCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

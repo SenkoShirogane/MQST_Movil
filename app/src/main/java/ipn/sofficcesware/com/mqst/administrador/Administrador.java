@@ -18,15 +18,19 @@ import android.view.MenuItem;
 
 import ipn.sofficcesware.com.mqst.MainActivity;
 import ipn.sofficcesware.com.mqst.R;
+import ipn.sofficcesware.com.mqst.cliente.ContactanosActivity;
 
 public class Administrador extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, OrdenesAdminFragment.OnFragmentInteractionListener,
-        ProductosAdminFragment.OnFragmentInteractionListener, ProveedoresFragment.OnFragmentInteractionListener {
+        ProductosAdminFragment.OnFragmentInteractionListener, ProveedoresFragment.OnFragmentInteractionListener,
+        ClientesAdminFragment.OnFragmentInteractionListener, PiezasAdminFragment.OnFragmentInteractionListener,
+        AdministradoresFragment.OnFragmentInteractionListener, PerfilAdminFragment.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_administrador);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -34,8 +38,9 @@ public class Administrador extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                //Snackbar.make(view, "hola", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                Intent intento = new Intent(Administrador.this, ContactanosActivity.class);
+                startActivity(intento);
             }
         });
 
@@ -47,6 +52,9 @@ public class Administrador extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Fragment fragmento = new PerfilAdminFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_admin,fragmento).commit();
     }
 
     @Override
@@ -88,11 +96,14 @@ public class Administrador extends AppCompatActivity
         Boolean FragmentoSeleccionado = false;
 
         if (id == R.id.nav_perfilAdmin) {
-            //
+            fragment = new PerfilAdminFragment();
+            FragmentoSeleccionado = true;
         } else if (id == R.id.nav_administradores) {
-
+            fragment = new AdministradoresFragment();
+            FragmentoSeleccionado = true;
         } else if (id == R.id.nav_clientesAdmin) {
-
+            fragment = new ClientesAdminFragment();
+            FragmentoSeleccionado = true;
         } else if (id == R.id.nav_proveedoresAdmin) {
             fragment = new ProveedoresFragment();
             FragmentoSeleccionado = true;
@@ -100,7 +111,8 @@ public class Administrador extends AppCompatActivity
             fragment = new ProductosAdminFragment();
             FragmentoSeleccionado = true;
         } else if (id == R.id.nav_piezasAdmin) {
-
+            fragment = new PiezasAdminFragment();
+            FragmentoSeleccionado = true;
         } else if (id == R.id.nav_ordenesAdmin) {
             fragment = new OrdenesAdminFragment();
             FragmentoSeleccionado = true;

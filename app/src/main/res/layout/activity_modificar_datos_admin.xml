@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ipn.sofficcesware.com.mqst.administrador.ModificarDatosAdminActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titModificarPerfil"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/TittleSize"
+        android:textStyle="bold"
+        android:id="@+id/TituloModAdmin"
+        />
+
+
+    <ScrollView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/contenido"
+        android:layout_below="@+id/TituloModAdmin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margDiv"
+        android:layout_marginStart="@dimen/margDiv"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/paddDiv">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txUserModificaCliente"
+                android:text="@string/etiquetaUser"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edUserModificaCliente"
+                android:text="@string/verUser"
+                android:layout_toRightOf="@+id/txUserModificaCliente"
+                android:layout_alignBaseline="@+id/txUserModificaCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txNombreModificaCliente"
+                android:text="@string/etiquetaName"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txUserModificaCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edNombreModificaCliente"
+                android:text="@string/verNombre"
+                android:layout_toRightOf="@+id/txNombreModificaCliente"
+                android:layout_alignBaseline="@+id/txNombreModificaCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txApPatModificaCliente"
+                android:text="@string/etiquetaApPat"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txNombreModificaCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edApPatModificaCliente"
+                android:text="@string/verApPat"
+                android:layout_toRightOf="@+id/txApPatModificaCliente"
+                android:layout_alignBaseline="@+id/txApPatModificaCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txApMatModificaCliente"
+                android:text="@string/etiquetaApMat"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txApPatModificaCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edApMatModificaCliente"
+                android:text="@string/verApMat"
+                android:layout_toRightOf="@+id/txApMatModificaCliente"
+                android:layout_alignBaseline="@+id/txApMatModificaCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txEmailModificaCliente"
+                android:text="@string/etiquetaEmail"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txApMatModificaCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edEmailModificaCliente"
+                android:text="@string/verEmail"
+                android:layout_toRightOf="@+id/txEmailModificaCliente"
+                android:layout_alignBaseline="@+id/txEmailModificaCliente"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGuardarModAdmin"
+                android:text="@string/etiquetaGuardar"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/BlancoHumo"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txEmailModificaCliente"
+                android:layout_margin="@dimen/margDiv"
+                android:padding="@dimen/paddDiv"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCancelarModAdmin"
+                android:text="@string/etiquetaCancelar"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/BlancoHumo"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/btnGuardarModAdmin"
+                android:layout_margin="@dimen/margDiv"
+                android:padding="@dimen/paddDiv"/>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

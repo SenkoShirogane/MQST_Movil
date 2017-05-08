@@ -9,9 +9,10 @@ import android.widget.EditText;
 
 import ipn.sofficcesware.com.mqst.administrador.Administrador;
 import ipn.sofficcesware.com.mqst.cliente.Cliente;
+import ipn.sofficcesware.com.mqst.cliente.RegistroActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button IniciarSesion, Limpiar, IniciarSesion2;
+    Button IniciarSesion, Limpiar, IniciarSesion2, Registro;
     EditText Usuario, Contrasena;
 
     @Override
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         IniciarSesion2.setOnClickListener(this);
         Limpiar = (Button) findViewById(R.id.btnLimpiarLogin);
         Limpiar.setOnClickListener(this);
+        Registro = (Button) findViewById(R.id.btn_Registro);
+        Registro.setOnClickListener(this);
 
         Usuario = (EditText) findViewById(R.id.usuarioLogin);
         Contrasena = (EditText) findViewById(R.id.contrasenaLogin);
@@ -41,7 +44,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intento1);
                 break;
             case R.id.btnIniciarSesion2:
-                Intent intento2 = new Intent(MainActivity.this, Administrador.class);
+                Intent intento3 = new Intent(MainActivity.this, Administrador.class);
+                startActivity(intento3);
+                break;
+            case R.id.btn_Registro:
+                Intent intento2 = new Intent(MainActivity.this, RegistroActivity.class);
                 startActivity(intento2);
                 break;
             case R.id.btnLimpiarLogin:

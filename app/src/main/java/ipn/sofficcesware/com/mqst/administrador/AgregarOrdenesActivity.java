@@ -1,6 +1,7 @@
 package ipn.sofficcesware.com.mqst.administrador;
 
 import android.icu.util.Calendar;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,6 +20,9 @@ public class AgregarOrdenesActivity extends AppCompatActivity implements View.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_ordenes);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         //getActionBar().setDisplayHomeAsUpEnabled(true); //boton atrás
 

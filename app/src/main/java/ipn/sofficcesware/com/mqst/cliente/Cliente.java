@@ -1,8 +1,11 @@
 package ipn.sofficcesware.com.mqst.cliente;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,10 +16,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import ipn.sofficcesware.com.mqst.MainActivity;
 import ipn.sofficcesware.com.mqst.R;
 
 public class Cliente extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, PerfilClienteFragment.OnFragmentInteractionListener,
+        ProductosClienteFragment.OnFragmentInteractionListener, OrdenesClienteFragment.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +34,7 @@ public class Cliente extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Lo sentimos, no se pueden contactar administradores.", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -42,6 +47,9 @@ public class Cliente extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Fragment fragmento = new PerfilClienteFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_cliente,fragmento).commit();
     }
 
     @Override
@@ -79,18 +87,36 @@ public class Cliente extends AppCompatActivity
         // ¿Qué se hace al presionar una opcion en el menu?.
         int id = item.getItemId();
 
+        Fragment fragment = null;
+        Boolean FragmentoSeleccionado = false;
+
         if (id == R.id.nav_perfilCliente) {
-
+            fragment = new PerfilClienteFragment();
+            FragmentoSeleccionado = true;
         } else if (id == R.id.nav_ordenesCliente) {
-
+            fragment = new OrdenesClienteFragment();
+            FragmentoSeleccionado = true;
+        } else if (id == R.id.nav_productosCliente) {
+            fragment = new ProductosClienteFragment();
+            FragmentoSeleccionado = true;
         } else if (id == R.id.nav_manualCliente) {
 
         } else if (id == R.id.nav_salirCliente) {
-
+            //Lógica para cerrar sesión x3
+            Intent intento = new Intent(this, MainActivity.class);
+            startActivity(intento);
         }
 
+        if(FragmentoSeleccionado){
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_cliente,fragment).commit();
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

@@ -23,7 +23,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:id="@+id/MiPerfilCliente" />
+                android:id="@+id/MiPerfilCliente"
+                />
 
             <Button
                 android:id="@+id/VerOrdenesAdmin"
@@ -34,19 +35,24 @@
                 android:layout_below="@+id/MiPerfilCliente"
                 android:layout_marginTop="43dp"
                 android:text="@string/verOrdenes"
-                android:textSize="20sp" />
-
+                android:textSize="20sp"
+                android:layout_margin="@dimen/margDiv"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/BlancoHumo"/>
 
             <Button
                 android:id="@+id/btn_AgregarOrden"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Agregar Órdenes"
+                android:text="@string/agregarOrdenes"
                 android:textSize="20sp"
                 android:layout_marginTop="24dp"
                 android:layout_below="@+id/VerOrdenesAdmin"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/margDiv"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/BlancoHumo"/>
 
             <Button
                 android:id="@+id/ModificarOrden"
@@ -57,7 +63,10 @@
                 android:textSize="20sp"
                 android:layout_below="@+id/btn_AgregarOrden"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/margDiv"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/BlancoHumo"/>
 
             <Button
                 android:id="@+id/EliminarOrden"
@@ -68,7 +77,10 @@
                 android:textSize="20sp"
                 android:layout_below="@+id/ModificarOrden"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/margDiv"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/BlancoHumo"/>
 
             <Button
                 android:id="@+id/OrdenesExtra"
@@ -79,7 +91,10 @@
                 android:textSize="20sp"
                 android:layout_below="@+id/EliminarOrden"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/margDiv"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/BlancoHumo"/>
         </RelativeLayout>
     </ScrollView>
 

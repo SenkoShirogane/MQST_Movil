@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ipn.sofficcesware.com.mqst.proveedor.AgregarProveedoresActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Proveedor"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/TittleSize"
+        android:textStyle="bold"
+        android:id="@+id/Titulo" />
+
+    <ScrollView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/contenido"
+        android:layout_below="@+id/Titulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margDiv"
+        android:layout_marginStart="@dimen/margDiv"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/paddDiv">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txNombreRegistroCliente"
+                android:text="@string/etiquetaName"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/margDiv" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edNombreRegistro"
+                android:layout_toRightOf="@+id/txNombreRegistroCliente"
+                android:layout_alignBaseline="@+id/txNombreRegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txApPatRegistroCliente"
+                android:text="@string/etiquetaApPat"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txNombreRegistroCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edApPatRegistroCliente"
+                android:layout_toRightOf="@+id/txApPatRegistroCliente"
+                android:layout_alignBaseline="@+id/txApPatRegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txApMatRegistroCliente"
+                android:text="@string/etiquetaApMat"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txApPatRegistroCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edApMatRegistroCliente"
+                android:layout_toRightOf="@+id/txApMatRegistroCliente"
+                android:layout_alignBaseline="@+id/txApMatRegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txUserRegistroCliente"
+                android:text="@string/etiquetaEmpresa"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txApMatRegistroCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edUserRegistroCliente"
+                android:layout_toRightOf="@+id/txUserRegistroCliente"
+                android:layout_alignBaseline="@+id/txUserRegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txEmailRegistroCliente"
+                android:text="@string/etiquetaEmail"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txUserRegistroCliente"
+                android:layout_margin="@dimen/margDiv" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edEmailRegistroCliente"
+                android:layout_toRightOf="@+id/txEmailRegistroCliente"
+                android:layout_alignBaseline="@+id/txEmailRegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txEmail2RegistroCliente"
+                android:text="@string/etiquetaEmail2"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txEmailRegistroCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edEmail2RegistroCliente"
+                android:layout_toRightOf="@+id/txEmail2RegistroCliente"
+                android:layout_alignBaseline="@+id/txEmail2RegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txEstadoRegistroCliente"
+                android:text="@string/etiquetaEstado"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_margin="@dimen/margDiv"
+                android:layout_below="@+id/txEmail2RegistroCliente"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edEstadoRegistroCliente"
+                android:layout_toRightOf="@+id/txEstadoRegistroCliente"
+                android:layout_alignBaseline="@+id/txEstadoRegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txMunicipioRegistroCliente"
+                android:text="@string/etiquetaMunicipio"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_margin="@dimen/margDiv"
+                android:layout_below="@+id/txEstadoRegistroCliente"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edMunicipioRegistroCliente"
+                android:layout_toRightOf="@+id/txMunicipioRegistroCliente"
+                android:layout_alignBaseline="@+id/txMunicipioRegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txColoniaRegistroCliente"
+                android:text="@string/etiquetaColonia"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_margin="@dimen/margDiv"
+                android:layout_below="@+id/txMunicipioRegistroCliente"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edColoniaRegistroCliente"
+                android:layout_toRightOf="@+id/txColoniaRegistroCliente"
+                android:layout_alignBaseline="@+id/txColoniaRegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txCodPRegistroCliente"
+                android:text="@string/etiquetaCodP"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_margin="@dimen/margDiv"
+                android:layout_below="@+id/txColoniaRegistroCliente"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edCodPRegistroCliente"
+                android:layout_toRightOf="@+id/txCodPRegistroCliente"
+                android:layout_alignBaseline="@+id/txCodPRegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txCalleRegistroCliente"
+                android:text="@string/etiquetaCalle"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_margin="@dimen/margDiv"
+                android:layout_below="@+id/txCodPRegistroCliente"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edCalleRegistroCliente"
+                android:layout_toRightOf="@+id/txCalleRegistroCliente"
+                android:layout_alignBaseline="@+id/txCalleRegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txNumeroRegistroCliente"
+                android:text="@string/etiquetaNumero"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_margin="@dimen/margDiv"
+                android:layout_below="@+id/txCalleRegistroCliente"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edNumeroRegistroCliente"
+                android:layout_toRightOf="@+id/txNumeroRegistroCliente"
+                android:layout_alignBaseline="@+id/txNumeroRegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txTelCaRegistroCliente"
+                android:text="@string/etiquetaTelCasa"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_margin="@dimen/margDiv"
+                android:layout_below="@+id/txNumeroRegistroCliente"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edTelCaRegistroCliente"
+                android:layout_toRightOf="@+id/txTelCaRegistroCliente"
+                android:layout_alignBaseline="@+id/txTelCaRegistroCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txTelCeRegistroCliente"
+                android:text="@string/etiquetaTelMovil"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/txTelCaRegistroCliente"
+                android:layout_margin="@dimen/margDiv"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edTelCeRegistroCliente"
+                android:layout_toRightOf="@+id/txTelCeRegistroCliente"
+                android:layout_alignBaseline="@+id/txTelCeRegistroCliente"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_RegistroProveedor"
+                android:text="@string/etiquetaRegistro"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/BlancoHumo"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txTelCeRegistroCliente"
+                android:layout_margin="@dimen/margDiv"
+                android:padding="@dimen/paddDiv"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_LimpiarRegistroProveedor"
+                android:text="@string/etiquetaLimpiar"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/BlancoHumo"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/btn_RegistroProveedor"
+                android:layout_margin="@dimen/margDiv"
+                android:padding="@dimen/paddDiv"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
